@@ -21,3 +21,8 @@ func GetRightTriangleArea(base float64, height float64) area float64 {
     area := (base * height)/2
     return
 }
+
+func GetEquilateralTriangleArea(side float64) area float64 {
+    area := (math.Sqrt(3) * side * side)/4
+    return
+}
