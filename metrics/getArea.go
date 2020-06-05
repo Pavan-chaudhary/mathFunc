@@ -1,6 +1,6 @@
 package metrics
 
-import math
+import "math"
 
 func GetSquareArea(side float64) area float64 {
     area := side * side 
