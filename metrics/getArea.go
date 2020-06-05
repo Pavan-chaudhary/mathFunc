@@ -16,3 +16,8 @@ func GetCircleArea(radius float64) area float64 {
     area := radius * math.Pi * math.Pi
     return
 }
+
+func GetRightTriangleArea(base float64, height float64) area float64 {
+    area := (base * height)/2
+    return
+}
