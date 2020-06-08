@@ -5,7 +5,7 @@ import (
     "math"
 )
 
-func getMean(arr *[]float64) float64{
+func GetMean(arr *[]float64) float64{
     var res float64 = 0
     for _,val := range *arr {
         res += val
@@ -13,7 +13,7 @@ func getMean(arr *[]float64) float64{
     return res/float64(len(*arr))
 }
 
-func getVariance(arr *[]float64) float64{
+func GetVariance(arr *[]float64) float64{
     mean := getMean(arr)
     var sq_sum float64 = 0
     for _,val := range *arr {
@@ -22,7 +22,7 @@ func getVariance(arr *[]float64) float64{
     return sq_sum
 }
 
-func getStandardDeviation(arr *[]float64) float64{
+func GetStandardDeviation(arr *[]float64) float64{
     return math.Sqrt(getVariance(arr))
 }
 
